@@ -5,7 +5,7 @@
     {"id" : 4,"nombre": "campera deportiva","precio":4000,"img":"/calzas/NI_CU5293-010-1.jpg","cantidad": 1},
     {"id" : 5,"nombre": "campera deportiva adidas","precio":3000,"img":"/calzas/NI_DD5153-010-1.jpg","cantidad": 1},
     {"id" : 6,"nombre": "campera deportiva camuflada","precio":3000,"img":"/calzas/PU_521065-02-1.jpg ", "cantidad": 1},
-    {"id" : 5,"nombre": "pantalon shoggin","precio":4000,"img":"/calzas/TO_163702-1.jpg:,","cantidad": 1},
-    {"id" : 6,"nombre": "pantalon shoggin negro","precio":3000,"img":"/calzas/UA_1369006-335-1.jpg", "cantidad": 1}
+    {"id" : 7,"nombre": "pantalon shoggin negro","precio":3000,"img":"/calzas/calza-negra.jpg", "cantidad": 1}
 
 ]
+

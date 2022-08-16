@@ -1,8 +1,9 @@
 :root{
     --verde:#00A149;
     --blanco:#fff;
-    --rojo:#881014;
-    --oscuro:#000;
+    --celeste: #40CFFF; 
+    --amarrillo:  #FFFF00 ; 
+    --oscuro: #000;
     --titulos:'Arima Madurai',cursive;
     --parrafos:'Mulish', sans-serif;
 }
@@ -21,6 +22,14 @@ body{
 }
 
 
+
+
+
+
+
+
+
+
 /* globales */
 
 .contenedor{
@@ -36,14 +45,12 @@ h3, p, a{
     font-family: var(--parrafos);
 }
 
-img{
-    max-width: 100%;
+
+.amarillo{
+    color: var(--amarrillo);
 }
-.verde{
-    color: var(--verde);
-}
-.rojo{
-    color: var(--rojo);
+.celeste{
+    color: var(--celeste);
 }
 
 .ocultar{
@@ -79,6 +86,20 @@ img{
     cursor: pointer;
 }
 
+
+.btn-verde{
+    background-color: var(--blanco);
+    border: none;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-family: var(--parrafos);
+}
+
+
+
+
+
 /* encabezado */
 
 .contenedor-navegacion{
@@ -94,16 +115,14 @@ img{
 }
 
 .logo h2{
-    font-size: 25px;
+    font-size:38px;
 }
 
 .logo h2, .navegacion a {
     color: var(--blanco);  
   }
 
-.logo h2{
-    font-size: 3rem;
-}
+
 
 .navegacion a{
     text-decoration: none;
@@ -135,6 +154,12 @@ img{
     margin-top: 5rem;
 }
 
+
+.contenedor{
+ padding-top: 10px;
+ padding-bottom: 5px;
+}
+
 .navegacion{
     position: absolute;
     top: 0;
@@ -158,6 +183,10 @@ img{
     height: .5rem;
     margin-bottom: .5rem;
 }
+
+
+
+
 
 
 
@@ -321,5 +350,41 @@ div img{
     cursor: pointer;
 }
 .boton-eliminar:focus {
-    outline: none;
+    outline: none;}
+    
+
+/* ropa */
+
+
+.menu{
+    padding-top: 4rem;
+}
+
+.texto-ropa{
+    text-align: center;
+    font-family: var(--parrafos);
+    font-size: 5rem;
+    border: none;
+}
+
+.botones-ropa{
+    display: flex;
+    flex-wrap: wrap
+}
+
+.botones-ropa button{
+
+    flex: 0 0 calc(50% 1rem);
+    padding: 1rem 3rem;
+
+}
+
+@media(min-width:768px){
+    .botones-ropa{
+        display: inline-block;
+    }
+    .botones-ropa button{
+        flex: unset;
+    }
+
 }
