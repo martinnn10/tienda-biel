@@ -114,3 +114,6 @@ const agregarAlCarrito = (prodId) => {
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
 
   }
+
+
+
