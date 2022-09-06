@@ -29,10 +29,8 @@ botonVaciar.addEventListener('click', () => {
 
 
 
-fetch('/data.json')
-.then( (res) => res.json())
-.then(  (data) => {
-    data.forEach((producto) => {
+
+    stockProductos.forEach((producto) => {
         const div = document.createElement('div')
         div.classList.add('producto')
         div.innerHTML = `
@@ -53,7 +51,7 @@ fetch('/data.json')
             agregarAlCarrito(producto.id)
      });
     })
-})
+
 
 const agregarAlCarrito = (prodId) => {
 
@@ -68,7 +66,7 @@ const agregarAlCarrito = (prodId) => {
             }
         })
     } else { 
-        const item = data.find((prod) => prod.id === prodId)//Trabajamos con las ID
+        const item = stockProductos.find((prod) => prod.id === prodId)//Trabajamos con las ID
         //Una vez obtenida la ID, lo que haremos es hacerle un push para agregarlo al carrito
         carrito.push(item)
     }
